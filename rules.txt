@@ -1,6 +1,8 @@
 [
         [Memory.getStateParam("interactionState") == "active" -->
-        TTS.speak("this is a test, rules were reloaded"); Memory.setStateParam("interactionState", "idle")]
-        [Memory.getStateParam("interactionState") == "idle" -->
-        TTS.speak("Interaction is idle"); Memory.setStateParam("interactionState", "active")]
-]
+        TTS.speak("Hey, I am Temi"); Memory.setStateParam("interactionState", "changing to idle"); TiltHead.up()]
+
+        [Memory.getStateParam("interactionState") == "changing to idle" -->
+        TTS.speak("I'm going to sleep now"); Memory.setStateParam("interactionState", "idle");
+        TiltHead.down()]
+    ]
