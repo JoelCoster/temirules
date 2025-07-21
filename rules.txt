@@ -1,0 +1,6 @@
+[
+        [Memory.getStateParam("interactionState") == "active" -->
+        TTS.speak("this is a test"); Memory.setStateParam("interactionState", "idle")]
+        [Memory.getStateParam("interactionState") == "idle" -->
+        TTS.speak("Interaction is idle"); Memory.setStateParam("interactionState", "active")]
+]
