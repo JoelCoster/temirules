@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Temi Conversation Assistant</string>
+    <string name="app_title">Temi Conversation Agent</string>
+    <string name="listen">Listen</string>
+    <string name="listening">Listening…</string>
+    <string name="user_said">You: %1$s</string>
+    <string name="temi_said">Temi: %1$s</string>
+</resources>
